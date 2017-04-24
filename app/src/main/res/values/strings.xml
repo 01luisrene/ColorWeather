@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Color Weather</string>
+    <string name="grados_centigrados">Imagen de grados centigrados</string>
+    <string name="title_hourly_forecast">Hourly Forecast</string>
+    <string name="daily_forecast">Daily Forecast</string>
+    <string name="daily">Daily</string>
+    <string name="minutely">Minutely</string>
+    <string name="minutely_weather">Minutely Forecast</string>
+    <string name="hourly">Hourly</string>
+</resources>
