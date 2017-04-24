@@ -7,4 +7,5 @@
     <string name="minutely">Minutely</string>
     <string name="minutely_weather">Minutely Forecast</string>
     <string name="hourly">Hourly</string>
+    <string name="no_data_to_display">No data to display</string>
 </resources>

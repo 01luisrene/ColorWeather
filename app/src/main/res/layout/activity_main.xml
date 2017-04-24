@@ -46,13 +46,13 @@
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
         android:layout_marginTop="24dp"
+        android:text="--"
         android:textSize="54sp"
         android:textStyle="normal"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintLeft_toLeftOf="@+id/descriptionTextView"
         app:layout_constraintRight_toRightOf="@+id/descriptionTextView"
-        app:layout_constraintTop_toBottomOf="@+id/descriptionTextView"
-        tools:text="--"/>
+        app:layout_constraintTop_toBottomOf="@+id/descriptionTextView"/>
 
     <ImageView
         android:id="@+id/degreeImageView"

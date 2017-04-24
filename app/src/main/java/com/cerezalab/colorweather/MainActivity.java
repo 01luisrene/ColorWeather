@@ -71,7 +71,13 @@ public class MainActivity extends Activity {
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
 
-        String url ="https://api.darksky.net/forecast/dbe14a2f4be3f3570fab7b99c7a4d56e/37.8267,-122.4233?units=si";
+        String forecastURL = "https://api.darksky.net/forecast";
+        String apiKEY = "dbe14a2f4be3f3570fab7b99c7a4d56e";
+        String latitude = "37.8267";
+        String longitude = "-122.4233";
+        String units = "units=si";
+
+        String url = forecastURL + "/" + apiKEY + "/" + latitude + "," + longitude + "?" + units;
 
         // Request a string response from the provided URL.
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
@@ -111,7 +117,7 @@ public class MainActivity extends Activity {
 
 
     }
-    
+
     @OnClick(R.id.dailyWeatherTextView)
     public void dailyWeatherClick(){
 

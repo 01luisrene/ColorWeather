@@ -5,6 +5,7 @@ import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.cerezalab.colorweather.Adapters.HourlyWeatherAdapter;
 
@@ -16,6 +17,7 @@ import butterknife.ButterKnife;
 public class HourlyWeatherActivity extends Activity {
 
     @BindView(R.id.hourlyListView) ListView hourlyListView;
+    @BindView(R.id.hourlyNoDataTextView) TextView noDataTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,8 @@ public class HourlyWeatherActivity extends Activity {
         HourlyWeatherAdapter hourlyWeatherAdapter = new HourlyWeatherAdapter(this, hours);
 
         hourlyListView.setAdapter(hourlyWeatherAdapter);
+
+        hourlyListView.setEmptyView(noDataTextView);
 
     }
 
