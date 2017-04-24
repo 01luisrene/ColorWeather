@@ -111,8 +111,7 @@ public class MainActivity extends Activity {
 
 
     }
-
-
+    
     @OnClick(R.id.dailyWeatherTextView)
     public void dailyWeatherClick(){
 
